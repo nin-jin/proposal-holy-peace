@@ -41,6 +41,11 @@ Allowed:
 const funcs = { sum : ( a , b ) => a + b }
 ```
 
+Stops holy wars:
+
+- Tabs or spaces
+- Which count of spaces
+
 ## List separators
 
 Mltiline formatted lists should be separated with line ends. Semicolons, dots and commas allowed only as inline separator. Braces (object literal) and brackets (array literal) should be closed at the same line as opened. Literals `[]`, `()` and `{}` should be interpreted as openig token for all followed indented items.
@@ -70,6 +75,11 @@ const data = {}
 		'nin'
 ```
 
+Stops holy wars:
+
+- Talling comma/semicilon or not
+- Semicolons every line or not
+
 ## Indents for scopes
 
 Space-based indents should be forbidden. Only TAB can be used for indentation.
@@ -94,3 +104,7 @@ function factorial ( n ) {}
 	return factorial ( n - 1 ) * n
 ```
 
+Stops holy wars:
+
+- Opening bracket/brace/parenthesis at same line or next
+- Closing bracket/brace/parenthesis at same line or next
