@@ -43,7 +43,7 @@ const funcs = { sum : ( a , b ) => a + b }
 
 ## List separators
 
-Mltiline formatted lists should be separated with line ends. Semicolons, dots and commas allowed only as inline separator. Braces (object literal) and brackets (array literal) should be closed at the same line as opened. Literals `[]`, `()` and `{}` should be interpreted as openig for all followed indented items.
+Mltiline formatted lists should be separated with line ends. Semicolons, dots and commas allowed only as inline separator. Braces (object literal) and brackets (array literal) should be closed at the same line as opened. Literals `[]`, `()` and `{}` should be interpreted as openig token for all followed indented items.
 
 Forbidden:
 
