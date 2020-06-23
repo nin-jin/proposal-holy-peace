@@ -67,7 +67,7 @@ function factorial ( n )
 
 ## List separators
 
-In multiline formatted lists should be separated with line ends. semicolons, dots and comma allowd only as inline separator. Braces and brackets should be closed at the same line as opened.
+Mltiline formatted lists should be separated with line ends. Semicolons, dots and commas allowed only as inline separator. Braces (object literal) and brackets (array literal) should be closed at the same line as opened.
 
 Forbidden:
 
