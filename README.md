@@ -41,33 +41,9 @@ Allowed:
 const funcs = { sum : ( a , b ) => a + b }
 ```
 
-## Indents for scopes
-
-Space-based indents should be forbidden. Only TAB can be used for indentation. Braces should be forbidden. Indentations should be used instead.
-
-Forbidden:
-
-```javascript
-function factorial( n ) {
-  if ( n === 1 ) {
-    return 1
-  }
-  return factorial( n - 1 ) * n
-}
-```
-
-Allowed:
-
-```javascript
-function factorial ( n )
-  if ( n === 1 )
-    return 1
-  return factorial ( n - 1 ) * n
-```
-
 ## List separators
 
-Mltiline formatted lists should be separated with line ends. Semicolons, dots and commas allowed only as inline separator. Braces (object literal) and brackets (array literal) should be closed at the same line as opened.
+Mltiline formatted lists should be separated with line ends. Semicolons, dots and commas allowed only as inline separator. Braces (object literal) and brackets (array literal) should be closed at the same line as opened. Literals `[]`, `()` and `{}` should be interpreted as openig for all followed indented items.
 
 Forbidden:
 
@@ -83,11 +59,38 @@ const data = {
 Allowed:
 
 ```javascript
-const data = { }
-  sizes : [ 1 , 2 ]
-    Math .PI
-    Math .E
-  names : { }
-    'jin'
-    'nin'
+const data = {}
+	sizes : []
+		1
+		2
+		Math .PI
+		Math .E
+	names : {}
+		'jin'
+		'nin'
 ```
+
+## Indents for scopes
+
+Space-based indents should be forbidden. Only TAB can be used for indentation.
+
+Forbidden:
+
+```javascript
+function factorial( n ) {
+  if ( n === 1 ) {
+    return 1
+  }
+  return factorial( n - 1 ) * n
+}
+```
+
+Allowed:
+
+```javascript
+function factorial ( n ) {}
+	if ( n === 1 ) {}
+		return 1
+	return factorial ( n - 1 ) * n
+```
+
