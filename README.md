@@ -20,8 +20,47 @@ Proposal that prevents holy wars about  code styles
 
 In additional to "use strict" should be added a "holy peace" special literal that enables new parser that implements rules of this proposal. This literal should be at start of whole script.
 
-```
+```javascript
 "holy peace"
 // other code
 ```
 
+## Spaces between tokens
+
+Every tokens should be separated by one space.
+
+Forbidden:
+
+```javascript
+const funcs = { sum: (a, b)=> a+b }
+```
+
+Allowed:
+
+```javascript
+const funcs = { sum : ( a , b ) => a + b }
+```
+
+## Indents for scopes
+
+Space-based indents should be forbidden. Only TAB can be used for indentation. Braces should be forbidden. Indentations should be used instead.
+
+Forbidden:
+
+```javascript
+function factorial( n ) {
+  if ( n === 1 ) {
+    return 1
+  }
+  return factorial( n - 1 ) * n
+}
+```
+
+Allowed:
+
+```javascript
+function factorial ( n )
+  if ( n === 1 )
+    return 1
+  return factorial ( n - 1 ) * n
+```
