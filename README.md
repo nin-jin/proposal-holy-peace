@@ -64,3 +64,30 @@ function factorial ( n )
     return 1
   return factorial ( n - 1 ) * n
 ```
+
+## List separators
+
+In multiline formatted lists should be separated with line ends. semicolons, dots and comma allowd only as inline separator. Braces and brackets should be closed at the same line as opened.
+
+Forbidden:
+
+```javascript
+const data = {
+  sizes : [ 1 , 2 , Math .Pi , Math .E ] ,
+  names : {
+    'jin' ,
+    'nin' ,
+} ;
+```
+
+Allowed:
+
+```javascript
+const data = { }
+  sizes : [ 1 , 2 ]
+    Math .PI
+    Math .E
+  names : { }
+    'jin'
+    'nin'
+```
