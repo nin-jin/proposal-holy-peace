@@ -27,7 +27,7 @@ In additional to "use strict" should be added a "holy peace" special literal tha
 
 ## Spaces between tokens
 
-Every tokens should be separated by one space.
+Every token should be separated by one space.
 
 Forbidden:
 
